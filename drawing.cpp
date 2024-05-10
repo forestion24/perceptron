@@ -45,5 +45,6 @@ void getData(vector<bool>& pixels) {
 void erase(vector<bool>& pixels, vector<sf::CircleShape>& shapes) {
     shapes.clear();
     pixels.assign(800*600, false);
-    cout << "input erased\n";
+//    cout << "input erased\n";
+// cout commented out because for some reason it got executed like 30 times and cluttered the terminal
 }

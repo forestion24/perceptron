@@ -69,9 +69,9 @@ int main() {
 
             int guess = perceptron.feedForward(input);
             if (guess == 1) {
-                cout << "circle\n";
+                cout << "perceptron thinks circle\n";
             } else if (guess == -1) {
-                cout << "rectangle\n";
+                cout << "perceptron thinks rectangle\n";
             }
 
             string answer;
@@ -86,6 +86,7 @@ int main() {
             }
 
             perceptron.train(input, label);
+            erase(pixels, shapes);
         }
 
         window.clear(sf::Color::Black);
