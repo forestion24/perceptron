@@ -33,7 +33,7 @@ int main() {
         }
 
         // check if enter key is pressed to save pixel state to file
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Return)) {
+        if (event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Return) {
             getData(pixels);
         }
 
@@ -47,7 +47,7 @@ int main() {
             drawing(window, shapes, pixels, 10, sf::Color::Black, false);
         }
         
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+        if (event.type == sf::Event::KeyReleased && event.key.code == sf::Keyboard::Space) {
             getData(pixels);
 
             double learningRate = 0.1;
