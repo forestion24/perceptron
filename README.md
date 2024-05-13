@@ -37,3 +37,6 @@ update the input without actually inputting it (mostly for debugging)
 
 ### space
 input - after this switch to terminal to see the output
+
+# accuracy
+The accuracy is ~59.2% on account of my bad drawing skills and small data set
