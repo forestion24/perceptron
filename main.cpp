@@ -13,7 +13,7 @@ using namespace std;
 
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Digit Recognition");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Alfred");
 
     vector<sf::CircleShape> shapes;
     vector<bool> pixels(800*600, false);
