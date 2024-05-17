@@ -138,5 +138,5 @@ int main() {
     return 0;
 }
 
-// g++ -o main.cpp-out main.cpp drawing.cpp -lsfml-graphics -lsfml-window -lsfml-system
+// g++ -o main.cpp-out main.cpp drawing.cpp Perceptron.cpp -lsfml-graphics -lsfml-window -lsfml-system
 // cat weights.txt | tr -s ' ' '\n' | fold -w 5 | awk '{printf "%6s", $1} NR%800==0 {print ""}' > aligned_weights.txt

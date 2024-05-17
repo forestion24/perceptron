@@ -4,7 +4,7 @@ Simple perceptron made from scratch in c++ with a gui input method
 # compiling
 To compile the program use:
 
-```g++ -o main.cpp-out main.cpp drawing.cpp -lsfml-graphics -lsfml-window -lsfml-system```
+```g++ -o main.cpp-out main.cpp drawing.cpp Perceptron.cpp -lsfml-graphics -lsfml-window -lsfml-system```
 
 # to run it use:
 ```./main.cpp-out```
