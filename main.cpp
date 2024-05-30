@@ -13,7 +13,7 @@ using namespace std;
 
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Alfred");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Alfred", sf::Style::Titlebar | sf::Style::Close);
 
     vector<sf::CircleShape> shapes;
     vector<bool> pixels(800*600, false);
