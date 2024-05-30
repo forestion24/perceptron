@@ -1,5 +1,5 @@
 # perceptron
-Simple perceptron made from scratch in c++ with a gui input method
+Simple perceptron (affectionally named Alfred) made from scratch in c++ with a gui input method
 
 # compiling
 To compile the program use:

@@ -69,9 +69,9 @@ int main() {
 
             int guess = perceptron.feedForward(input);
             if (guess == 1) {
-                cout << "perceptron thinks circle\n";
+                cout << "Alfred thinks circle\n";
             } else if (guess == -1) {
-                cout << "perceptron thinks rectangle\n";
+                cout << "Alfred thinks rectangle\n";
             }
 
             string answer;
@@ -84,6 +84,8 @@ int main() {
             } else {
                 cout << "you can't type\n";
             }
+
+            system("./alignWeights.sh");
 
             perceptron.train(input, label);
             erase(pixels, shapes);
@@ -137,6 +139,3 @@ int main() {
 
     return 0;
 }
-
-// g++ -o main.cpp-out main.cpp drawing.cpp Perceptron.cpp -lsfml-graphics -lsfml-window -lsfml-system
-// cat weights.txt | tr -s ' ' '\n' | fold -w 5 | awk '{printf "%6s", $1} NR%800==0 {print ""}' > aligned_weights.txt
